@@ -155,3 +155,15 @@ p {
 .btn:focus {
     outline: 2px dotted #55d7dc;
 }
+
+.row {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    color: #F7F7FF;
+}
+
+::before {
+    display: table;
+    content: " ";
+}
