@@ -26,6 +26,7 @@ h1 {
 }
 
 /*timers*/
+
 .label {
     align-self: center;
     justify-self: center;
@@ -60,7 +61,7 @@ p {
 
 #counter {
     grid-area: 2 / 3 / 2 / 3;
-    color: #279AF1;
+    color: #EDBBB4;
 }
 
 #work-timer {
@@ -81,10 +82,9 @@ p {
     cursor: pointer;
     width: 100px;
     height: 30px;
-    font-size: 16px;
     margin: 0 10px;
     line-height: 0;
-    padding: 1em 1em;
+    padding: 1.5em 1em;
     letter-spacing: 0.05rem;
 }
 
