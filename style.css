@@ -86,6 +86,8 @@ p {
     line-height: 0;
     padding: 1.5em 1em;
     letter-spacing: 0.05rem;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 #start {
