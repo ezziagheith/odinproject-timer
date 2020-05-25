@@ -8,7 +8,13 @@ let workSeconds = document.getElementById('work-seconds');
 let breakMinutes = document.getElementById('break-minutes');
 let breakSeconds = document.getElementById('break-seconds');
 
-let startTime
+
+// need to add functionality for btns
+
+
+
+
+
 
 timer = () => {
     // this is the work timer countdown
