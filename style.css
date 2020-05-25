@@ -1,16 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Iceland);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron&display=swap');
 
 html {
     background-color: #0E0E0E;
     height: 100%;
-    font-family: "Iceland";
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
     color: #F7F7FF;
-    font-family: "Iceland";
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
     text-transform: uppercase;
+    font-size: 55.065px;
 }
 
 #container {
@@ -30,8 +31,7 @@ h1 {
 .label {
     align-self: center;
     justify-self: center;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 34.033px;
 }
 
 #work {
@@ -50,8 +50,8 @@ h1 {
     display: flex;
     align-self: center;
     justify-self: center;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 21.034px;
+    font-family: 'Orbitron', sans-serif;
 }
 
 p {
@@ -61,7 +61,7 @@ p {
 
 #counter {
     grid-area: 2 / 3 / 2 / 3;
-    color: #EDBBB4;
+    
 }
 
 #work-timer {
@@ -91,7 +91,7 @@ p {
 }
 
 .fa-3x {
-    font-size: 2em;
+    font-size: 21.034px;
     line-height: 0;
 }
 
