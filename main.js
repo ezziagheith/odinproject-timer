@@ -30,6 +30,12 @@ timer = () => {
     }
     // this is the increment counter (cycles) that'll go up by 1 if both work and break timers completed
     if (workMinutes.innerText == 0 && workSeconds == 0 && breakMinutes.innerText == 0 && breakSeconds.innerText == 0) {
+        workMinutes.innerText = 25;
+        workSeconds.innerText = 00;
 
+        breakMinutes.innerText = 5;
+        breakSeconds.innerText = 00;
+
+        document.getElementById('counter').innerText++;
     }
 }
