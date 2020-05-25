@@ -90,6 +90,11 @@ p {
     text-transform: uppercase;
 }
 
+.fa-3x {
+    font-size: 2em;
+    line-height: 0;
+}
+
 #start {
     grid-area: 3 / 2 / 3 / 2;
 }
@@ -103,7 +108,6 @@ p {
 }
 
 .draw-border {
-    box-shadow: inset 0 0 0 4px #58afd1;
     color: #58afd1;
     transition: color 0.25s 0.0833333333s;
     position: relative;
@@ -154,16 +158,4 @@ p {
 
 .btn:focus {
     outline: 2px dotted #55d7dc;
-}
-
-.row {
-    display: inline-block;
-    margin: auto;
-    text-align: center;
-    color: #F7F7FF;
-}
-
-::before {
-    display: table;
-    content: " ";
 }
