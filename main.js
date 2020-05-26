@@ -8,10 +8,12 @@ let workSeconds = document.getElementById('work-seconds');
 let breakMinutes = document.getElementById('break-minutes');
 let breakSeconds = document.getElementById('break-seconds');
 
+/* functionality for btns */
+
 // storing a reference to a timer variable
 let startTime; 
 
-// functionality for btns
+
 start.addEventListener('click', function(){
     if(startTime === undefined){
         startTime = setInterval(timer, 1000)
@@ -20,6 +22,10 @@ start.addEventListener('click', function(){
     }
 })
 
+stop.addEventListener('click', function () {
+    stopInterval()
+    startTime = undefined;
+})
 
 
 
@@ -56,3 +62,7 @@ timer = () => {
     }
 }
 
+// function to stop timer
+stopInterval = () => {
+    clearInterval(startTime)
+}
