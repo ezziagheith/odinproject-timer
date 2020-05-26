@@ -21,9 +21,6 @@ start.addEventListener('click', function(){
     }
 })
 
-
-
-
 timer = () => {
     // this is the work timer countdown
     if (workSeconds.innerText != 0) {
@@ -53,3 +50,4 @@ timer = () => {
         document.getElementById('counter').innerText++;
     }
 }
+
