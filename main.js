@@ -9,9 +9,17 @@ let breakMinutes = document.getElementById('break-minutes');
 let breakSeconds = document.getElementById('break-seconds');
 
 
+let startTime; 
+
 // need to add functionality for btns
 
-
+start.addEventListener('click', function(){
+    if(startTime === undefined){
+        startTime = setInterval(timer, 1000)
+    } else {
+        alert("Timer is already running");
+    }
+})
 
 
 
@@ -37,10 +45,10 @@ timer = () => {
     // this is the increment counter (cycles) that'll go up by 1 if both work and break timers completed
     if (workMinutes.innerText == 0 && workSeconds == 0 && breakMinutes.innerText == 0 && breakSeconds.innerText == 0) {
         workMinutes.innerText = 25;
-        workSeconds.innerText = 00;
+        workSeconds.innerText = "00";
 
         breakMinutes.innerText = 5;
-        breakSeconds.innerText = 00;
+        breakSeconds.innerText = "00";
 
         document.getElementById('counter').innerText++;
     }
