@@ -10,32 +10,15 @@ let breakSeconds = document.getElementById('break-seconds');
 
 /* functionality for btns */
 
-// storing a reference to a timer variable
 let startTime; 
 
+// need to add functionality for btns
 
 start.addEventListener('click', function(){
     if(startTime === undefined){
         startTime = setInterval(timer, 1000)
     } else {
-        alert("Timer is running");
-    }
-})
-
-stop.addEventListener('click', function () {
-    stopInterval()
-    startTime = undefined;
-})
-
-let startTime; 
-
-
-start.addEventListener("clicked", function(){
-    console.log("clicked")
-    if (startTime === undefined){
-        startTime = setInterval(timer, 1000)
-    } else {
-        alert("timer running")
+        alert("Timer is already running");
     }
 })
 
