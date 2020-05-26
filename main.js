@@ -13,7 +13,6 @@ let breakSeconds = document.getElementById('break-seconds');
 // storing a reference to a timer variable
 let startTime; 
 
-
 start.addEventListener('click', function(){
     if(startTime === undefined){
         startTime = setInterval(timer, 1000)
@@ -26,7 +25,6 @@ stop.addEventListener('click', function () {
     stopInterval()
     startTime = undefined;
 })
-
 
 
 timer = () => {
