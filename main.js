@@ -8,11 +8,10 @@ let workSeconds = document.getElementById('work-seconds');
 let breakMinutes = document.getElementById('break-minutes');
 let breakSeconds = document.getElementById('break-seconds');
 
-
+// storing a reference to a timer variable
 let startTime; 
 
-// need to add functionality for btns
-
+// functionality for btns
 start.addEventListener('click', function(){
     if(startTime === undefined){
         startTime = setInterval(timer, 1000)
@@ -20,6 +19,12 @@ start.addEventListener('click', function(){
         alert("Timer is running");
     }
 })
+
+
+
+
+
+
 
 timer = () => {
     // this is the work timer countdown
