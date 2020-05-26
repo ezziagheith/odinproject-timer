@@ -28,10 +28,6 @@ stop.addEventListener('click', function () {
 })
 
 
-
-
-
-
 timer = () => {
     // this is the work timer countdown
     if (workSeconds.innerText != 0) {
