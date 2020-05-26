@@ -27,7 +27,17 @@ stop.addEventListener('click', function () {
     startTime = undefined;
 })
 
+let startTime; 
 
+
+start.addEventListener("clicked", function(){
+    console.log("clicked")
+    if (startTime === undefined){
+        startTime = setInterval(timer, 1000)
+    } else {
+        alert("timer running")
+    }
+})
 
 
 
