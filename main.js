@@ -1,6 +1,6 @@
 let start = document.getElementById('start');
-let reset = document.getElementById('stop');
-let stop = document.getElementById('reset');
+let reset = document.getElementById('reset');
+let stop = document.getElementById('stop');
 
 let workMinutes = document.getElementById('work-minutes');
 let workSeconds = document.getElementById('work-seconds');
@@ -22,7 +22,14 @@ start.addEventListener('click', function(){
     }
 })
 
+reset.addEventListener('click', function(){
+    console.log("clicked")
+    workMinutes.innerHTML = 25;
+    workSeconds.innerHTML = '0';
 
+    breakMinutes.innerHTML = 5;
+    workSeconds.innerHTML = '0';
+})
 
 
 timer = () => {
