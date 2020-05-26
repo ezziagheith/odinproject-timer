@@ -23,7 +23,6 @@ start.addEventListener('click', function(){
 })
 
 reset.addEventListener('click', function(){
-    console.log("clicked")
     workMinutes.innerHTML = 25;
     workSeconds.innerHTML = '0';
 
