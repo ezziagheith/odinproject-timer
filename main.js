@@ -33,6 +33,10 @@ reset.addEventListener('click', function(){
 
     breakMinutes.innerHTML = 5;
     workSeconds.innerHTML = '00';
+
+    document.getElementById('counter').innerText = 0;
+    stopInterval()
+    startTime = undefined;
 })
 
 
@@ -55,7 +59,7 @@ timer = () => {
         }
     }
     // this is the increment counter (cycles) that'll go up by 1 if both work and break timers completed
-    if (workMinutes.innerText == 0 && workSeconds == 0 && breakMinutes.innerText == 0 && breakSeconds.innerText == 0) {
+    if (workMinutes.innerText == 0 && workSeconds.innerHTML == 0 && breakMinutes.innerText == 0 && breakSeconds.innerText == 0) {
         workMinutes.innerText = 25;
         workSeconds.innerText = "00";
 
